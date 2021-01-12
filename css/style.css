@@ -32,7 +32,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    max-height: 90vh;
     overflow: hidden;
 }
 
@@ -45,6 +45,7 @@ body {
 .pagina.ativa {
     display: block;
     width: 100%;
+    margin-top: 30px;
 }
 
 
@@ -430,12 +431,12 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 86vh;
+    height: 89vh;
 }
 
 .conteudo-principal nav{
     width: 100%;
-    height: 14vh;
+    height: 11vh;
     display: flex;
     justify-content: space-between;
     background: ghostwhite;
@@ -616,7 +617,7 @@ body {
     position: fixed;
     height: 450px;
     width: 527px;
-    top: -22%;
+    top: -16%;
     right: -52%;
     transform: translateY(-57%);
     background-image: linear-gradient(-45deg, var(--amarelo-iop) 0%, var(--amarelo-iop) 100%);
@@ -675,8 +676,8 @@ body {
 .registro-compra:before{
     position: absolute;
     content: '';
-    bottom: 359px;
-    right: 248px;
+    bottom: 504px;
+    right: 261px;
     height: 1px;
     width: 37px;
     background: var(--vermelho-iop);
@@ -689,8 +690,8 @@ body {
 .efetuar-cobranca:before{
     position: absolute;
     content: '';
-    bottom: 300px;
-    right: 248px;
+    bottom: 439px;
+    right: 261px;
     height: 1px;
     width: 37px;
     background: var(--vermelho-iop);
@@ -703,8 +704,8 @@ body {
 .liberar-equipamento:before{
     position: absolute;
     content: '';
-    bottom: 237px;
-    right: 248px;
+    bottom: 375px;
+    right: 261px;
     height: 1px;
     width: 37px;
     background: var(--vermelho-iop);
@@ -828,7 +829,7 @@ body {
     position: fixed;
     height: 455px;
     width: 500px;
-    top: -28%;
+    top: -15%;
     right: -3%;
     transform: translateY(-57%);
     background-image: linear-gradient(-45deg, var(--amarelo-iop) 0%, var(--amarelo-iop) 100%);
@@ -840,7 +841,7 @@ body {
     position: fixed;
     height: 455px;
     width: 500px;
-    top: -28%;
+    top: -12%;
     right: -175%;
     transform: translateY(-57%);
     background-image: linear-gradient(-45deg, var(--amarelo-iop) 0%, var(--amarelo-iop) 100%);
@@ -852,7 +853,7 @@ body {
     position: fixed;
     height: 455px;
     width: 500px;
-    top: -33%;
+    top: -17%;
     right: -229%;
     transform: translateY(-57%);
     background-image: linear-gradient(-45deg, var(--amarelo-iop) 0%, var(--amarelo-iop) 100%);
@@ -864,7 +865,7 @@ body {
     position: fixed;
     height: 236px;
     width: 229px;
-    top: -12%;
+    top: -3%;
     right: -308%;
     transform: translateY(-57%);
     background-image: linear-gradient(-45deg, var(--amarelo-iop) 0%, var(--amarelo-iop) 100%);
