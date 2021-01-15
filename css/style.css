@@ -445,7 +445,7 @@ body {
 /* Cabeçalho */
 .conteudo-principal{
     display: grid;
-    grid-template-rows: 80vh 10vh;
+    grid-template-rows: 90vh 10vh;
     text-align: center;
 }
 
@@ -762,7 +762,7 @@ body {
     display: grid;
     width: 100%;
     position: relative;
-    grid-template-rows: 80vh 10vh;
+    grid-template-rows: 90vh 10vh;
 }
 
 .swiper-container {
