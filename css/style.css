@@ -218,7 +218,7 @@ body {
 .conteudo-cadastro .cabecalho {
     display: flex;
     justify-content: space-between;
-    padding: 15px 15px 10px 15px;
+    padding: 0 15px 10px 15px;
     align-items: center;
 }
 
@@ -340,8 +340,9 @@ body {
 /* Formulários */
 
 .formulario {
-    width: 100%;
     overflow: hidden;
+    width: 93%;
+    margin: 0 10px 0 10px;
 }
 
 .formulario form {
@@ -902,7 +903,7 @@ body {
     color: #00B0FF;
     font-size: 20px;
     letter-spacing: 0.3px;
-    margin: 0px 0 10px 0;
+    margin: 0px 0 20px 0;
     text-align: left;
 }
 
@@ -910,7 +911,7 @@ body {
     color: #6C63FF;
     font-size: 20px;
     letter-spacing: 0.3px;
-    margin: 10px 0 10px 0;
+    margin: 0px 0 20px 0;
     text-align: center;
 }
 
@@ -919,6 +920,7 @@ body {
     font-size: 20px;
     letter-spacing: 0.3px;
     text-align: left;
+    margin: 0px 0 20px 0;
 }
 
 .conteudo-boas-vindas p{
@@ -942,11 +944,25 @@ body {
 
     .pagina.ativa {
         background: none;
-        width: 350px;
+        width: 400px;
     }
 
     .progresso .etapa .ponto:before, .progresso .etapa .ponto:after {
         right: -47px;
+    }
+}
+
+@media (max-width:360px) { 
+    .pagina.ativa {
+        background: none;
+        width: 360px;
+    }
+}
+
+@media (max-width:330px) { 
+    .pagina.ativa {
+        background: none;
+        width: 330px;
     }
 }
 
