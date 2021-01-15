@@ -201,7 +201,7 @@ body {
     text-align: center;
 }
 
-.conteudo-cadastro .container:before {
+/* .conteudo-cadastro .container:before {
     content: "";
     position: fixed;
     height: 455px;
@@ -211,7 +211,7 @@ body {
     transform: translateY(-57%);
     background-image: linear-gradient(-45deg, var(--amarelo-iop) 0%, var(--amarelo-iop) 100%);
     border-radius: 50%;
-}
+} */
 
 /* Cabeçalho */
 
