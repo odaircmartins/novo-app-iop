@@ -29,8 +29,8 @@ opcaoSelecionada.addEventListener('click',()=>{
     ativarCompra.classList.add("ativo");
     cancelarCompra.classList.remove("ativo");
 
-    setTimeout(()=>{
-        painelCompraEmExecucao.classList.remove("ativo");
-        painelSemAcao.classList.add("ativo");
-    },5000)
+    // setTimeout(()=>{
+    //     painelCompraEmExecucao.classList.remove("ativo");
+    //     painelSemAcao.classList.add("ativo");
+    // },5000)
 })

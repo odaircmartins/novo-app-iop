@@ -55,726 +55,793 @@
     <!-- <link rel="manifest" href="manifest.json" /> -->
 </head>
 
-<body>
-    <!-- Login -->
-    <div id="login" class="pagina">
-        <div class="container">
-            <div class="conteudo-login">
-                <div class="cabecalho">
-                    <img src="img/logo.png">
-                    <h2 class="titulo">iop</h2>
-                </div>
-
-                <div class="campo">
-                    <div class="rotulo">Email</div>
-                    <input type="text">
-                </div>
-
-                <div class="campo">
-                    <div class="rotulo">Senha</div>
-                    <input type="password">
-                </div>
-
-                <div class="lembrar">
-                    <input type="checkbox" id="lembrar" name="lembrar" checked>
-                    <label for="lembrar">Lembrar senha</label>
-                </div>
-
-                <div class="campo">
-                    <a href="#principal" class="fazer-login">Entrar</a>
-                </div>
-
-                <div class="outras-acoes">
-                    <a href="#cadastro">Criar conta</a>
-                    <a href="#">Esqueci a senha</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Cadastro -->
-    <div id="cadastro" class="pagina">
-        <div class="conteudo-cadastro">
+<body>    
+    <div class="app">
+        <!-- Login -->
+        <div id="login" class="pagina">
             <div class="container">
-                <div class="cabecalho">
-                    <div class="logo"><img src="img/logo.png" alt="iop"><a href="#">iop</a></div>
-                    <h1>Cadastro</h1>
-                </div>
-
-                <div class="progresso">
-                    <div class="etapa">
-                        <p>Login</p>
-                        <div class="ponto">
-                            <span>1</span>
-                        </div>
-                        <div class="check fas fa-check"></div>
+                <div class="conteudo-login">
+                    <div class="cabecalho">
+                        <img src="img/logo.png">
+                        <h2 class="titulo">iop</h2>
                     </div>
-                    <div class="etapa">
-                        <p>Endereço</p>
-                        <div class="ponto">
-                            <span>2</span>
-                        </div>
-                        <div class="check fas fa-check"></div>
+
+                    <div class="campo">
+                        <div class="rotulo">Email</div>
+                        <input type="text">
                     </div>
-                    <div class="etapa">
-                        <p>Pagamento</p>
-                        <div class="ponto">
-                            <span>3</span>
-                        </div>
-                        <div class="check fas fa-check"></div>
+
+                    <div class="campo">
+                        <div class="rotulo">Senha</div>
+                        <input type="password">
                     </div>
-                    <div class="etapa">
-                        <p>Termos</p>
-                        <div class="ponto">
-                            <span>4</span>
-                        </div>
-                        <div class="check fas fa-check"></div>
+
+                    <div class="lembrar">
+                        <input type="checkbox" id="lembrar" name="lembrar" checked>
+                        <label for="lembrar">Mantenha-me conectado</label>
                     </div>
-                </div>
 
-                <div class="formulario">
-                    <form action="#">
-                        <div class="pagina-formulario slide-pagina">
-                            <div class="campo">
-                                <div class="rotulo">Primeiro nome</div>
-                                <input type="text">
-                            </div>
-                            <div class="campo">
-                                <div class="rotulo">CPF</div>
-                                <input type="number">
-                            </div>
-                            <div class="campo">
-                                <div class="rotulo">Email</div>
-                                <input type="text">
-                            </div>
-                            <div class="campo">
-                                <div class="rotulo">Senha</div>
-                                <input type="password">
-                                <!-- https://pt.stackoverflow.com/questions/102024/input-type-password-com-o-olho-de-mostrar-senha -->
-                            </div>
-                            <div class="campo">
-                                <button class="primeiroProximo proximo">Próximo</button>
-                            </div>
-                        </div>
+                    <div class="campo">
+                        <a href="#principal" class="fazer-login">Entrar</a>
+                    </div>
 
-                        <div class="pagina-formulario">
-                            <div class="campo">
-                                <div class="rotulo">Rua</div>
-                                <input type="text">
-                            </div>
-                            <div class="campo">
-                                <div class="rotulo">Número</div>
-                                <input type="number">
-                            </div>
-                            <div class="campo">
-                                <div class="rotulo">Cidade</div>
-                                <input type="text">
-                            </div>
-                            <div class="campo">
-                                <div class="rotulo">UF</div>
-                                <input type="text">
-                            </div>
-                            <div class="campo botoes">
-                                <button class="anterior-1 anterior">Anterior</button>
-                                <button class="proximo-1 proximo">Próximo</button>
-                            </div>
-                        </div>
-
-                        <div class="pagina-formulario">
-                            <div class="campo">
-                                <div class="rotulo">Número do cartão de crédito</div>
-                                <input type="number">
-                            </div>
-                            <div class="campo">
-                                <div class="rotulo">Nome</div>
-                                <input type="text">
-                            </div>
-                            <div class="campo">
-                                <div class="rotulo">Vencimento</div>
-                                <input type="number">
-                            </div>
-                            <div class="campo">
-                                <div class="rotulo">Código de segurança</div>
-                                <input type="number">
-                            </div>
-
-                            <div class="campo botoes">
-                                <button class="anterior-2 anterior">Anterior</button>
-                                <button class="proximo-2 proximo">Próximo</button>
-                            </div>
-                        </div>
-
-                        <div class="pagina-formulario">
-                            <div class="campo-termos">
-                                <p>
-                                    Ao finalizar o cadastro, você está concordando com a
-                                    nossa <a href="#politica">Política de
-                                        privacidade</a> e com o <a href="#termo">
-                                        Termo de utilização do aplicativo iop.</a>
-                                </p>
-
-                                <p>
-                                    Ao finalizar o cadastro você também declara para os
-                                    devidos fins que é maior de idade de acordo com o
-                                    que está descrito no Novo Código Cívil Brasileiro
-                                    (art. 5º, da Lei n. 10.406/2002)".
-                                </p>
-                            </div>
-                            <div class="campo botoes">
-                                <button class="anterior-3 anterior">Anterior</button>
-                                <a href="#principal" class="enviar">Finalizar</a>
-                            </div>
-                        </div>
-                    </form>
+                    <div class="outras-acoes">
+                        <a href="#cadastro">Criar conta</a>
+                        <a href="#">Esqueci a senha</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Principal -->
-    <div id="principal" class="pagina">
-        <div class="conteudo-principal">
-            <div class="container">
-                <div class="painel-sem-acao ativo">
-                    <div class="logo">
-                        <img src="img/logo.png" class="img" alt="iop">
+        <!-- Cadastro -->
+        <div id="cadastro" class="pagina">
+            <div class="conteudo-cadastro">
+                <div class="container">
+                    <div class="cabecalho">
+                        <div class="logo"><img src="img/logo.png" alt="iop"><a href="#">iop</a></div>
+                        <h1>Cadastro</h1>
                     </div>
-                </div>
-                <div class="painel-comprar">
-                    <div class="logo-cliente">
-                        <img src="img/narcose.jpg" alt="logo">
-                    </div>
-                    <div class="nome-cliente">Narcose</div>
-                    <div class="produto">Chopp da Praia</div>
-                    <div class="opcoes-compra">
-                        <div class="campo">
-                            <button class="opcao-selecionada">
-                                <i class="fas fa-shopping-cart fa-1x"></i>
-                                300 ml - R$ 5,00
-                            </button>
-                        </div>
-                        <div class="campo">
-                            <button class="opcao-selecionada">
-                                <i class="fas fa-shopping-cart fa-1x"></i>
-                                500 ml - R$ 8,00
-                            </button>
-                        </div>
-                        <div class="campo">
-                            <button class="opcao-selecionada">
-                                <i class="fas fa-shopping-cart fa-1x"></i>
-                                700 ml - R$ 15,00
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="compra-em-execucao">
-                    <h1>Processando a compra</h1>
 
-                    <div class="etapas-da-compra">
-                        <div class="etapa-compra registro-compra">
-                            <div class="ponto">1</div>
-                            <div class="descricao-ponto">Registrando</div>
+                    <div class="progresso">
+                        <div class="etapa">
+                            <p>Login</p>
+                            <div class="ponto">
+                                <span>1</span>
+                            </div>
+                            <div class="check fas fa-check"></div>
                         </div>
-                        <div class="etapa-compra efetuar-cobranca">
-                            <div class="ponto">2</div>
-                            <div class="descricao-ponto">Efetuando cobrança</div>
+                        <div class="etapa">
+                            <p>Endereço</p>
+                            <div class="ponto">
+                                <span>2</span>
+                            </div>
+                            <div class="check fas fa-check"></div>
                         </div>
-                        <div class="etapa-compra liberar-equipamento">
-                            <div class="ponto">3</div>
-                            <div class="descricao-ponto">Liberando equipamento</div>
+                        <div class="etapa">
+                            <p>Pagamento</p>
+                            <div class="ponto">
+                                <span>3</span>
+                            </div>
+                            <div class="check fas fa-check"></div>
                         </div>
-                        <div class="etapa-compra servir">
-                            <div class="ponto">4</div>
-                            <div class="descricao-ponto">Pronto</div>
+                        <div class="etapa">
+                            <p>Termos</p>
+                            <div class="ponto">
+                                <span>4</span>
+                            </div>
+                            <div class="check fas fa-check"></div>
                         </div>
                     </div>
 
-                    <h2>Quando acender o led verde, sirva-se!</h2>
+                    <div class="formulario">
+                        <form action="#">
+                            <div class="pagina-formulario slide-pagina">
+                                <div class="campo">
+                                    <div class="rotulo">Primeiro nome</div>
+                                    <input type="text">
+                                </div>
+                                <div class="campo">
+                                    <div class="rotulo">CPF</div>
+                                    <input type="number">
+                                </div>
+                                <div class="campo">
+                                    <div class="rotulo">Email</div>
+                                    <input type="text">
+                                </div>
+                                <div class="campo">
+                                    <div class="rotulo">Senha</div>
+                                    <input type="password">
+                                    <!-- https://pt.stackoverflow.com/questions/102024/input-type-password-com-o-olho-de-mostrar-senha -->
+                                </div>
+                                <div class="campo">
+                                    <button class="primeiroProximo proximo">Próximo</button>
+                                </div>
+                            </div>
+
+                            <div class="pagina-formulario">
+                                <div class="campo">
+                                    <div class="rotulo">Rua</div>
+                                    <input type="text">
+                                </div>
+                                <div class="campo">
+                                    <div class="rotulo">Número</div>
+                                    <input type="number">
+                                </div>
+                                <div class="campo">
+                                    <div class="rotulo">Cidade</div>
+                                    <input type="text">
+                                </div>
+                                <div class="campo">
+                                    <div class="rotulo">UF</div>
+                                    <input type="text">
+                                </div>
+                                <div class="campo botoes">
+                                    <button class="anterior-1 anterior">Anterior</button>
+                                    <button class="proximo-1 proximo">Próximo</button>
+                                </div>
+                            </div>
+
+                            <div class="pagina-formulario">
+                                <div class="campo">
+                                    <div class="rotulo">Número do cartão de crédito</div>
+                                    <input type="number">
+                                </div>
+                                <div class="campo">
+                                    <div class="rotulo">Nome</div>
+                                    <input type="text">
+                                </div>
+                                <div class="campo">
+                                    <div class="rotulo">Vencimento</div>
+                                    <input type="number">
+                                </div>
+                                <div class="campo">
+                                    <div class="rotulo">Código de segurança</div>
+                                    <input type="number">
+                                </div>
+
+                                <div class="campo botoes">
+                                    <button class="anterior-2 anterior">Anterior</button>
+                                    <button class="proximo-2 proximo">Próximo</button>
+                                </div>
+                            </div>
+
+                            <div class="pagina-formulario">
+                                <div class="campo-termos">
+                                    <p>
+                                        Ao finalizar o cadastro, você está concordando com a
+                                        nossa <a href="#politica">Política de
+                                            privacidade</a> e com o <a href="#termo">
+                                            Termo de utilização do aplicativo iop.</a>
+                                    </p>
+
+                                    <p>
+                                        Ao finalizar o cadastro você também declara para os
+                                        devidos fins que é maior de idade de acordo com o
+                                        que está descrito no Novo Código Cívil Brasileiro
+                                        (art. 5º, da Lei n. 10.406/2002)".
+                                    </p>
+                                </div>
+                                <div class="campo botoes">
+                                    <button class="anterior-3 anterior">Anterior</button>
+                                    <a href="#principal" class="enviar">Finalizar</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-            <nav>
-                <div class="comprar">
-                    <div class="ativar-compra ativo">
-                        <i class="fas fa-shopping-cart fa-2x"></i>
-                        <div class="nome-menu"> Comprar </div>
+        </div>
+
+        <!-- Principal -->
+        <div id="principal" class="pagina">
+            <div class="conteudo-principal">
+                <div class="container">
+                    <div class="painel-sem-acao ativo">
+                        <div class="logo">
+                            <img src="img/logo.png" class="img" alt="iop">
+                        </div>
                     </div>
-                    <div class="cancelar-compra">
-                        <i class="fas fa-ban fa-2x"></i>
-                        <div class="nome-menu"> Cancelar </div>
+                    <div class="painel-comprar">
+                        <div class="logo-cliente">
+                            <img src="img/narcose.jpg" alt="logo">
+                        </div>
+                        <div class="nome-cliente">Narcose</div>
+                        <div class="produto">Chopp da Praia</div>
+                        <div class="opcoes-compra">
+                            <div class="campo">
+                                <button class="opcao-selecionada">
+                                    <i class="fas fa-shopping-cart fa-1x"></i>
+                                    300 ml - R$ 5,00
+                                </button>
+                            </div>
+                            <div class="campo">
+                                <button class="opcao-selecionada">
+                                    <i class="fas fa-shopping-cart fa-1x"></i>
+                                    500 ml - R$ 8,00
+                                </button>
+                            </div>
+                            <div class="campo">
+                                <button class="opcao-selecionada">
+                                    <i class="fas fa-shopping-cart fa-1x"></i>
+                                    700 ml - R$ 15,00
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="compra-em-execucao">
+                        <h1>Processando a compra</h1>
+
+                        <div class="etapas-da-compra">
+                            <div class="etapa-compra registro-compra">
+                                <div class="ponto">1</div>
+                                <div class="descricao-ponto">Registrando</div>
+                            </div>
+                            <div class="etapa-compra efetuar-cobranca">
+                                <div class="ponto">2</div>
+                                <div class="descricao-ponto">Efetuando cobrança</div>
+                            </div>
+                            <div class="etapa-compra liberar-equipamento">
+                                <div class="ponto">3</div>
+                                <div class="descricao-ponto">Liberando equipamento</div>
+                            </div>
+                            <div class="etapa-compra servir">
+                                <div class="ponto">4</div>
+                                <div class="descricao-ponto">Pronto</div>
+                            </div>
+                        </div>
+
+                        <h2>Quando acender o led verde, sirva-se!</h2>
                     </div>
                 </div>
+                <nav>
+                    <div class="comprar">
+                        <div class="ativar-compra ativo">
+                            <i class="fas fa-shopping-cart fa-2x"></i>
+                            <div class="nome-menu"> Comprar </div>
+                        </div>
+                        <div class="cancelar-compra">
+                            <i class="fas fa-ban fa-2x"></i>
+                            <div class="nome-menu"> Cancelar </div>
+                        </div>
+                    </div>
 
-                <div class="configuracoes">
-                    <a href="#cadastro">
-                        <i class="fas fa-cog fa-2x"></i>
-                        <div class="nome-menu"> Configurações </div>
-                    </a>
-                </div>
-            </nav>
+                    <div class="logo-menu">
+                        iop
+                    </div>
 
-            <div class="logo-menu">
-                iop
+                    <div class="configuracoes">
+                        <a href="#cadastro">
+                            <i class="fas fa-cog fa-2x"></i>
+                            <div class="nome-menu"> Configurações </div>
+                        </a>
+                    </div>
+                </nav>
             </div>
         </div>
-    </div>
 
-    <!-- Comprar -->
-    <div id="boasvindas" class="pagina">
-        <div class="conteudo-boas-vindas">
-            <!-- Swiper -->
-            <div class="swiper-container">
-                <div class="swiper-wrapper slides">
-                    <div class="swiper-slide slide1">
-                        <h1>Bem vindo!</h1>                        
-                        <img src="img/bemvindo.svg" alt="">
-                        <p> Que bom ver você aqui! Estamos chegando para trazer conveniência
-                            e agilidade para você.</p>
-                        <div class="acao">
-                            <a href="#login">Vamos lá</a>
-                        </div>                        
+        <!-- Comprar -->
+        <div id="boasvindas" class="pagina">
+            <div class="conteudo-boas-vindas">
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper slides">
+                        <div class="swiper-slide slide1">
+                            <h1>bem vindo ao iop</h1>
+                            <img src="img/bemvindo.svg" alt="">
+                            <p> Que bom ver você aqui! Estamos chegando para trazer conveniência
+                                e agilidade para você.</p>
+                        </div>
+                        <div class="swiper-slide slide2">
+                            <h1>Autosserviço</h1>
+                            <img src="img/velocidade.svg" alt="">
+                            <p> Tenha a seu alcance o poder de interagir com os equimentos de
+                                forma inteligente, descomplicada, comprando sua bebida sem
+                                depender de terceiros.</p>
+                        </div>
+                        <div class="swiper-slide slide3">
+                            <h1>Segurança</h1>
+                            <img src="img/seguranca.svg" alt="">
+                            <p> Utilizamos tecnologia de ponta e parceiros certificados
+                                pelo Banco Central, para que os dados de seu cartão de
+                                crédito fiquem seguros.</p>
+                        </div>
+                        <div class="swiper-slide slide4">
+                            <h1>Confiança</h1>
+                            <img src="img/confianca.svg" alt="">
+                            <p> Somos parceiros de cervejarias que você conhece e confia.</p>
+                        </div>
                     </div>
-                    <div class="swiper-slide slide2">
-                        <h1>Autosserviço</h1>                        
-                        <img src="img/velocidade.svg" alt="">
-                        <p> Tenha a seu alcance o poder de interagir com os equimentos de 
-                            forma inteligente, descomplicada, comprando sua bebida sem 
-                            depender de terceiros.</p>
-                        <div class="acao">
-                            <a href="#login">Vamos lá</a>
-                        </div> 
-                    </div>
-                    <div class="swiper-slide slide3">
-                        <h1>Segurança</h1>                        
-                        <img src="img/seguranca.svg" alt="">
-                        <p> Utilizamos tecnologia de ponta e parceiros certificados
-                            pelo Banco Central, para que os dados de seu cartão de 
-                            crédito fiquem seguros.</p>
-                        <div class="acao">
-                            <a href="#login">Vamos lá</a>
-                        </div> 
-                    </div>
-                    <div class="swiper-slide slide4">
-                        <h1>Confiança</h1>                        
-                        <img src="img/confianca.svg" alt="">
-                        <p> Somos parceiros de cervejarias que você conhece e confia.</p>
-                        <div class="acao">
-                            <a href="#login">Vamos lá</a>
-                        </div> 
-                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
                 </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
+                <div class="acao">
+                    <a href="#login">Vamos lá</a>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- Comprar -->
-    <div id="politica" class="pagina">
-        <div class="conteudo-politica">
-            <h1>Política de Privacidade</h1>
+        <!-- Comprar -->
+        <div id="politica" class="pagina">
+            <div class="conteudo-politica">
+                <h1>Política de Privacidade</h1>
+
+                <a href="#cadastro"></a>
+
+                <p> Nosso objetivo é sempre prestar a nossos clientes um atendimento ágil e simplificado, tendo isto
+                    também
+                    em nossa Política de Privacidade. Porém, caso existam dúvidas, pode nos contatar através dos meios
+                    disponibilizados em nosso site ou através de nossos revendedores credenciados. </p>
 
-            <a href="#cadastro"></a>
+                <p> A Política de Privacidade trata a forma que lidamos com seus dados pessoais, mantendo o foco na
+                    segurança, privacidade e de forma transparente. Ela descreve os dados que coletamos, como os
+                    utilizamos,
+                    a forma
+                    que são armazenados e os direitos em relação a esses dados. </p>
 
-            <p> Nosso objetivo é sempre prestar a nossos clientes um atendimento ágil e simplificado, tendo isto também
-                em nossa Política de Privacidade. Porém, caso existam dúvidas, pode nos contatar através dos meios
-                disponibilizados em nosso site ou através de nossos revendedores credenciados. </p>
+                <span>Introdução</span>
 
-            <p> A Política de Privacidade trata a forma que lidamos com seus dados pessoais, mantendo o foco na
-                segurança, privacidade e de forma transparente. Ela descreve os dados que coletamos, como os utilizamos,
-                a forma
-                que são armazenados e os direitos em relação a esses dados. </p>
+                <p> Quando você cria uma conta para utilizar nossos serviços, fornece seus dados pessoais, CPF e
+                    endereço,
+                    além de informações do cartão de crédito em que deseja que seja cobrado as compras efetuadas. Estes
+                    dados são necessários para que possamos viabilizar as operações e te entregar a melhor experiência
+                    possível.</p>
 
-            <span>Introdução</span>
+                <p> O respeito, segurança e transparência são valores fundamentais na jornada de entregar serviços
+                    inteligentes, sem burocracia e que realmente agreguem valor para você.</p>
 
-            <p> Quando você cria uma conta para utilizar nossos serviços, fornece seus dados pessoais, CPF e endereço,
-                além de informações do cartão de crédito em que deseja que seja cobrado as compras efetuadas. Estes
-                dados são necessários para que possamos viabilizar as operações e te entregar a melhor experiência
-                possível.</p>
+                <p> Ao aceitar os termos dessa Política de Privacidade, você está ciente de que a controladora dos seus
+                    dados
+                    pessoais, será a Inovetech Tecnologia, inscrita no CNPJ sob nº 25.794.346/0001-30, com sede na Avenida Bento Gonçalves, 9935
+                    –
+                    Bairro Agronomia – Porto Alegre/RS.</p>
 
-            <p> O respeito, segurança e transparência são valores fundamentais na jornada de entregar serviços
-                inteligentes, sem burocracia e que realmente agreguem valor para você.</p>
+                <span>1 - Aplicação</span>
 
-            <p> Ao aceitar os termos dessa Política de Privacidade, você está ciente de que a controladora dos seus
-                dados
-                pessoais, será a Inovetech, inscrita no CNPJ sob nº XXXXX, com sede na Avenida Bento Gonçalves, 9935 –
-                Bairro Agronomia – Porto Alegre/RS.</p>
+                <p> Cada vez que você ler um termo iniciado em letra maiúscula nesta Política, significa que ele é um
+                    termo
+                    com significado definido especificamente.</p>
 
-            <span>1 - Aplicação</span>
+                <p> Em linhas gerais, sempre que descrevermos Política com a primeira letra maiúscula, significa que se
+                    refere a este documento em específico. Quando descrevermos “Iop”, “nós” ou nossos refere-se ao Iop.
+                    Por
+                    sua vez, quando descrevermos “você”, “sua” ou “seu”, nos referimos a você, sendo esta Política de
+                    Privacidade aplicável a todos os clientes do Iop no Brasil.</p>
 
-            <p> Cada vez que você ler um termo iniciado em letra maiúscula nesta Política, significa que ele é um termo
-                com significado definido especificamente.</p>
+                <p>Coletamos seus dados quando:</p>
 
-            <p> Em linhas gerais, sempre que descrevermos Política com a primeira letra maiúscula, significa que se
-                refere a este documento em específico. Quando descrevermos “Iop”, “nós” ou nossos refere-se ao Iop. Por
-                sua vez, quando descrevermos “você”, “sua” ou “seu”, nos referimos a você, sendo esta Política de
-                Privacidade aplicável a todos os clientes do Iop no Brasil.</p>
+                <p> - Usar o aplicativo do Iop para smartphones; </p>
+                <p> - Criar uma conta em qualquer um dos nossos produtos ou serviços;</p>
+                <p> - Efetua login em nossos serviços;</p>
+                <p> - Navegar no website do Iop através do endereço https://meuiop.com;</p>
+                <p> - Entrar em contato conosco pelos nossos canais de atendimento;</p>
+                <p> - Participar de pesquisas ou promoções realizadas pelo Iop.</p>
 
-            <p>Coletamos seus dados quando:</p>
+                <p>Esta Política de Privacidade se aplica especificamente aos clientes do Iop que são pessoas naturais
+                    que
+                    efetivamente contratem, utilizem ou acessem um ou mais serviços ou produtos do Iop, seja para uso
+                    como
+                    pessoa física ou por meio de pessoa jurídica. </p>
 
-            <p> - Usar o aplicativo do Iop para smartphones; </p>
-            <p> - Criar uma conta em qualquer um dos nossos produtos ou serviços;</p>
-            <p> - Efetua login em nossos serviços;</p>
-            <p> - Navegar no website do Iop através do endereço https://meuiop.com;</p>
-            <p> - Entrar em contato conosco pelos nossos canais de atendimento;</p>
-            <p> - Participar de pesquisas ou promoções realizadas pelo Iop.</p>
+                <p> As práticas descritas nesta Política de Privacidade só se aplicam ao tratamento dos seus dados
+                    pessoais
+                    no Brasil e estão sujeitas às leis locais aplicáveis, com destaque para a Lei nº 13.709/2018 (Lei
+                    Geral
+                    de Proteção de Dados Pessoais, ou "LGPD") a partir de sua entrada em vigor.</p>
 
-            <p>Esta Política de Privacidade se aplica especificamente aos clientes do Iop que são pessoas naturais que
-                efetivamente contratem, utilizem ou acessem um ou mais serviços ou produtos do Iop, seja para uso como
-                pessoa física ou por meio de pessoa jurídica. </p>
+                <span>2 - Dados pessoais que são coletados pelo Iop</span>
 
-            <p> As práticas descritas nesta Política de Privacidade só se aplicam ao tratamento dos seus dados pessoais
-                no Brasil e estão sujeitas às leis locais aplicáveis, com destaque para a Lei nº 13.709/2018 (Lei Geral
-                de Proteção de Dados Pessoais, ou "LGPD") a partir de sua entrada em vigor.</p>
+                <p> Ao utilizar nossos serviços, de forma consentida você nos fornece alguns de seus dados pessoais.
+                    Sempre
+                    que você interage com o Iop, nós coletamos seus dados pessoais, sendo eles informados por você ou de
+                    forma automática, como por exemplo a sua localização para melhorar a sua experiência, sugerindo
+                    locais
+                    que pode utilizar nossos serviços. Também recebemos alguns dados pessoais enviados por parceiros que
+                    contratamos para finalidades específicas para que possamos cumprir com obrigações legais.</p>
 
-            <span>2 - Dados pessoais que são coletados pelo Iop</span>
+                <p> Ao aceitar os termos desta Política de Privacidade, você se compromete a fornecer dados pessoais
+                    verdadeiros, atualização, que reflitam a sua identidade ao qual servirá de forma de acesso para
+                    utilização de nossos serviços, sendo você responsabilizável com base nas leis vigentes no Brasil,
+                    caso
+                    forneça informações falsas ou imprecisas ou que representem má fé. </p>
 
-            <p> Ao utilizar nossos serviços, de forma consentida você nos fornece alguns de seus dados pessoais. Sempre
-                que você interage com o Iop, nós coletamos seus dados pessoais, sendo eles informados por você ou de
-                forma automática, como por exemplo a sua localização para melhorar a sua experiência, sugerindo locais
-                que pode utilizar nossos serviços. Também recebemos alguns dados pessoais enviados por parceiros que
-                contratamos para finalidades específicas para que possamos cumprir com obrigações legais.</p>
+                <p> Os seus dados que tratamos são: </p>
 
-            <p> Ao aceitar os termos desta Política de Privacidade, você se compromete a fornecer dados pessoais
-                verdadeiros, atualização, que reflitam a sua identidade ao qual servirá de forma de acesso para
-                utilização de nossos serviços, sendo você responsabilizável com base nas leis vigentes no Brasil, caso
-                forneça informações falsas ou imprecisas ou que representem má fé. </p>
+                <p> Dados pessoais informados pelo titular</p>
 
-            <p> Os seus dados que tratamos são: </p>
+                <p> - Dados cadastrais, tais como nome, documentos de identificação, nacionalidade, endereço, data de
+                    nascimento, gênero, entre outros;</p>
 
-            <p> Dados pessoais informados pelo titular</p>
-
-            <p> - Dados cadastrais, tais como nome, documentos de identificação, nacionalidade, endereço, data de
-                nascimento, gênero, entre outros;</p>
-
-            <p> - Dados de contato, como telefone e e-mail;</p>
-
-            <p> - Dados de cartão de crédito para cobrança de compras realizadas através do IOP, ao qual seguem
-                critérios de criptografia e segurança operado através de parceiro com certificação PCI-DSS (Payment Card
-                Industry – Data Security Standard).</p>
-
-            <p> Dados pessoais que coletamos de terceiros</p>
-
-            <p> - Dados cadastrais, tais como: nome, filiação, data de nascimento, CPF, número de telefone, endereço,
-                entre outros;</p>
-
-            <p> - Dados sobre restrições financeiras, tais como: negativações, valores devidos, datas de vencimento,
-                quantidades de consultas, entre outros;</p>
-
-            <p> - Informações sobre histórico de crédito;</p>
-
-            <p> - Informações constantes da base de dados do Sistema de Informações de Crédito (SCR), mediante
-                consentimento.</p>
-
-            <p> Dados de navegação e do dispositivo</p>
-
-            <p> - Endereço IP do dispositivo móvel utilizado para acessar os serviços IOP;</p>
-
-            <p> - Interações realizadas e perfil de uso de sites, blogs e aplicativo IOP;</p>
-
-            <p> - Dados técnicos, como informações de URL, de conexão de rede, do provedor, e do dispositivo;</p>
-
-            <p> - Cookies;</p>
-
-            <p> - Atributos do dispositivo, tais como ID, sistema operacional, navegador e modelo;</p>
-
-            <p> - Dados de geolocalização do dispositivo caso você autorize a coleta a partir do seu dispositivo;</p>
-
-            <p> - Acesso a câmera de dispositivos móveis para leituras de QR Code.</p>
-
-            <p> Dados públicos</p>
-
-            <p> - Podemos coletar informações sobre você que estejam disponíveis publicamente ou que foram tornadas
-                públicas por você;</p>
-
-            <p> - Informações sobre menções ou interações com o Iop;</p>
-
-            <p> - Depoimentos referentes ao Iop postados em perfis e páginas nas redes sociais, juntamente com seu nome
-                e imagem (incluindo fotos de perfil).</p>
-
-            <span>3 - Como seus dados pessoais são utilizados</span>
-
-            <p> Utilizamos seus dados para prestar serviços de venda de produtos que nossos revendedores ofertam e são
-                acionados mediante sua interação em dispositivos físicos que contenham nossos equipamentos de automação,
-                cujo cobrança da compra é lançado no cartão de informado por você e ao qual fica memorizado para
-                agilizar compras futuras, tendo as seguintes finalidades:</p>
-
-            <p> Dados pessoais informados por você</p>
-
-            <p> - Prestação dos serviços e oferecimento dos produtos contratados</p>
-            <p> - Identificação, autenticação e verificação de requisitos para contratação dos serviços e produtos Iop
-            </p>
-            <p> - Autenticação de transações financeiras</p>
-            <p> - Atendimento de solicitações e dúvidas</p>
-            <p> - Contato por telefone, e-mail, SMS, WhatsApp, ou outros meios de comunicação, inclusive para envio de
-                notificações ou push de uso dos nossos serviços;</p>
-            <p> - Marketing, prospecção, pesquisas de mercado, de opinião e promoção dos nossos produtos e serviços;</p>
-            <p> - Consultas sobre suas informações na base de dados do Sistema de Informações de Crédito (SCR), mediante
-                a
-                obtenção do seu consentimento com esse uso;</p>
-            <p> - Prevenção e resolução de problemas técnicos ou de segurança;</p>
-            <p> - Investigações e medidas de prevenção e combate a ilícitos, fraudes, crimes financeiros e garantia da
-                segurança dos clientes do Iop;</p>
-            <p> - Exercício regular de direitos do Iop, inclusive apresentando documentos em processos judiciais e
-                administrativos, se necessário;</p>
-            <p> - Colaboração ou cumprimento de ordem judicial, de autoridade competente ou de órgão fiscalizador;</p>
-            <p> - Cumprimento de obrigação legal ou regulatória.</p>
-
-            <p> Dados pessoais que coletamos de terceiros</p>
-
-            <p> - Melhoria de nossos produtos e serviços;</p>
-            <p> - Marketing, prospecção, pesquisas de mercado e de opinião;</p>
-            <p> - Prevenção e resolução de problemas técnicos ou de segurança;</p>
-            <p> - Investigações e medidas de prevenção e combate a ilícitos, fraudes, crimes financeiros e garantia da
-                segurança dos clientes Iop.</p>
-
-            <p> Dados de navegação e do dispositivo</p>
-
-            <p> - Prestação dos serviços, oferecimento dos produtos contratados e aperfeiçoamento do uso e experiência
-                com
-                o aplicativo e sites do Iop;</p>
-            <p> - Operacionalização de novos produtos e serviços;</p>
-            <p> - Recomendação de novos serviços, produtos ou funcionalidades do aplicativo, inclusive serviços de
-                parceiros que possam te interessar;</p>
-            <p> - Exibição de publicidade, seja no nosso site, redes sociais ou em sites de terceiros;</p>
-            <p> - Geração de estatísticas, estudos, pesquisas e levantamentos pertinentes às atividades e comportamento
-                no
-                uso dos produtos ou serviços;</p>
-            <p> - Prevenção e resolução de problemas técnicos ou de segurança;</p>
-            <p> - Dados de geolocalização para sua segurança; </p>
-            <p> - Investigações e medidas de prevenção e combate a ilícitos, fraudes, crimes financeiros e garantia da
-                segurança dos clientes Iop;</p>
-            <p> - Exercício regular de direitos do Iop, inclusive apresentando documentos em processos judiciais e
-                administrativos, se necessário;</p>
-            <p> - Cumprimento de ordem judicial, de autoridade competente ou de órgão fiscalizador;</p>
-            <p> - Cumprimento de obrigação legal ou regulatória.</p>
-
-            <span>4 - Compartilhamento de dados pessoais</span>
-
-            <p> O Iop poderá compartilhar os seus dados mediante sua solicitação. Sempre que efetuado, o
-                compartilhamento
-                de dados será realizado dentro dos limites e propósitos dos nossos negócios e de acordo com o que
-                autoriza a legislação aplicável.</p>
-
-            <span>5 - Retenção e exclusão dos dados pessoais</span>
-
-            <p> Durante o uso dos nossos produtos e serviços e por todo o período em que o Iop armazenar seus dados
-                pessoais, eles serão mantidos em ambiente seguro e controlado. Quando aplicável, e mesmo após o
-                cancelamento da conta do Iop, poderemos manter seus dados armazenados para atendimento a obrigações que
-                porventura estejam previstas em lei para prestação de informações a entes públicos e para preservar
-                nossos direitos em ações judiciais.</p>
-
-            <span>6 - Direitos como titular de dados pessoais</span>
-
-            <p> Com da entrada em vigor da LGPD, você, como titular de dados pessoais, pode exercer seus direitos frente
-                aos controladores dos seus dados pessoais, sendo seus direitos a partir de 18 de setembro de 2020 com
-                base na Lei 13.709:</p>
-
-            <p> - Confirmação da existência de tratamento de dados pessoais;</p>
-            <p> - Acesso aos dados pessoais;</p>
-            <p> - Correção de dados pessoais incompletos, inexatos ou desatualizados;</p>
-            <p> - Anonimização, bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em
-                desconformidade com a LGPD;</p>
-            <p> - Eliminação dos dados pessoais tratados com o consentimento;</p>
-            <p> - Informação das empresas com as quais o Iop compartilhou ou das quais recebeu seus dados pessoais;</p>
-            <p> - Informação sobre a possibilidade de não fornecer consentimento e sobre as consequências da negativa;
-            </p>
-            <p> - Revogação do consentimento;</p>
-            <p> - Decisões automatizadas.</p>
-
-            <span>7 - Registro de atividades</span>
-
-            <p> Poderão ser registradas as atividades que você realiza quando utiliza nosso aplicativo, site ou blogs,
-                criando, quando possível e aplicável, logs que conterão o endereço IP, acesso e ações realizadas por
-                você no serviço disponibilizado, data e hora de cada ação realizada e informações sobre o dispositivo
-                utilizado, tais como a versão de sistema operacional, navegador e geolocalização. Também podemos
-                utilizar tecnologias, próprias ou de terceiros, de monitoramento das atividades como Cookies (arquivos
-                de internet que armazenam de forma temporária o que você está visitando na rede), Web beacon (técnica
-                que permite mapear quem está visitando uma determinada página da web, identificando o seu comportamento
-                com diferentes sites ou servidores da web), e analytics tools (ferramenta de coleta de informações como
-                a forma que você visita um site). </p>
-
-            <span>8 - Transferência internacional de dados pessoais</span>
-
-            <p> Alguns de seus dados pessoais, ou todos eles, poderão ser transferidos para o exterior, por exemplo
-                quando são armazenados pelo Iop em servidores de computação em nuvem localizados fora do Brasil,
-                observando sempre todos os requerimentos estabelecidos pela legislação vigente e adoção das melhores
-                práticas de segurança e privacidade para garantir a integridade e confidencialidade dos seus dados
-                pessoais.</p>
-
-            <span>9 - Medidas de segurança</span>
-
-            <p> O Iop usa diversos tipos de medidas de segurança para garantir a integridade de seus dados pessoais,
-                como
-                padrões de segurança de informação praticados pela indústria quando coleta e armazena dados pessoais. Os
-                dados pessoais podem, ainda, ser armazenados por meios de tecnologia de cloud computing e outras
-                tecnologias que surjam futuramente, visando sempre a melhoria e aperfeiçoamento de nossos serviços e
-                segurança. Citamos como técnicas:</p>
-
-            <p> - Autenticação para acesso às informações;</p>
-            <p> - Dados criptografados;</p>
-            <p> - Uso de parceiros certificados;</p>
-            <p> - Ambiente auditável;</p>
-            <p> - Monitoramento contínuo.</p>
-
-            <span>10 - Consentimento</span>
-
-            <p> Você consente com o tratamento dos dados pessoais nas formas aqui indicadas clicar em "Li, estou ciente
-                das condições de tratamento dos meus dados pessoais e forneço meu consentimento, quando aplicável,
-                conforme descrito nesta Política de Privacidade.", quando acessa nosso aplicativo.</p>
-
-            <span>11 - Alterações a essa Política de Privacidade</span>
-
-            <p> O Iop poderá alterar esta Política de Privacidade a qualquer tempo. Toda vez que alguma condição
-                relevante desta Política de Privacidade for alterada, essas alterações serão válidas, eficazes e
-                vinculantes após a nova versão ser divulgada no nosso site ou enviada por e-mail para você. Ao continuar
-                a usar nossos produtos e serviços após uma alteração na Política de Privacidade, você estará concordando
-                com as novas condições, podendo manifestar discordância através dos nossos meios de comunicação.</p>
-
-            <p> Nas hipóteses em que as alterações a esta Política de Privacidade resultarem em mudanças nas práticas de
-                tratamento de dados pessoais que dependam do seu consentimento, solicitaremos o seu consentimento com os
-                novos termos da Política de Privacidade em relação ao tratamento de dados e finalidades indicados.</p>
-
-            <span>12 - Contato</span>
-
-            <p> Segundo a Lei nº 13.709/2018, o IOP é considerado o “Controlador” dos seus dados pessoais. Caso existam
-                dúvidas após a leitura desta Política de Privacidade ou por qualquer razão precisar se comunicar conosco
-                para assuntos envolvendo os seus dados pessoais, você pode entrar em contato através do telefone XXXX ou
-                pelo e-mail contato@meuiop.com.</p>
-
-            <a href="#cadastro"></a>
+                <p> - Dados de contato, como telefone e e-mail;</p>
+
+                <p> - Dados de cartão de crédito para cobrança de compras realizadas através do IOP, ao qual seguem
+                    critérios de criptografia e segurança operado através de parceiro com certificação PCI-DSS (Payment
+                    Card
+                    Industry – Data Security Standard).</p>
+
+                <p> Dados pessoais que coletamos de terceiros</p>
+
+                <p> - Dados cadastrais, tais como: nome, filiação, data de nascimento, CPF, número de telefone,
+                    endereço,
+                    entre outros;</p>
+
+                <p> - Dados sobre restrições financeiras, tais como: negativações, valores devidos, datas de vencimento,
+                    quantidades de consultas, entre outros;</p>
+
+                <p> - Informações sobre histórico de crédito;</p>
+
+                <p> - Informações constantes da base de dados do Sistema de Informações de Crédito (SCR), mediante
+                    consentimento.</p>
+
+                <p> Dados de navegação e do dispositivo</p>
+
+                <p> - Endereço IP do dispositivo móvel utilizado para acessar os serviços IOP;</p>
+
+                <p> - Interações realizadas e perfil de uso de sites, blogs e aplicativo IOP;</p>
+
+                <p> - Dados técnicos, como informações de URL, de conexão de rede, do provedor, e do dispositivo;</p>
+
+                <p> - Cookies;</p>
+
+                <p> - Atributos do dispositivo, tais como ID, sistema operacional, navegador e modelo;</p>
+
+                <p> - Dados de geolocalização do dispositivo caso você autorize a coleta a partir do seu dispositivo;
+                </p>
+
+                <p> - Acesso a câmera de dispositivos móveis para leituras de QR Code.</p>
+
+                <p> Dados públicos</p>
+
+                <p> - Podemos coletar informações sobre você que estejam disponíveis publicamente ou que foram tornadas
+                    públicas por você;</p>
+
+                <p> - Informações sobre menções ou interações com o Iop;</p>
+
+                <p> - Depoimentos referentes ao Iop postados em perfis e páginas nas redes sociais, juntamente com seu
+                    nome
+                    e imagem (incluindo fotos de perfil).</p>
+
+                <span>3 - Como seus dados pessoais são utilizados</span>
+
+                <p> Utilizamos seus dados para prestar serviços de venda de produtos que nossos revendedores ofertam e
+                    são
+                    acionados mediante sua interação em dispositivos físicos que contenham nossos equipamentos de
+                    automação,
+                    cujo cobrança da compra é lançado no cartão de informado por você e ao qual fica memorizado para
+                    agilizar compras futuras, tendo as seguintes finalidades:</p>
+
+                <p> Dados pessoais informados por você</p>
+
+                <p> - Prestação dos serviços e oferecimento dos produtos contratados</p>
+                <p> - Identificação, autenticação e verificação de requisitos para contratação dos serviços e produtos
+                    Iop
+                </p>
+                <p> - Autenticação de transações financeiras</p>
+                <p> - Atendimento de solicitações e dúvidas</p>
+                <p> - Contato por telefone, e-mail, SMS, WhatsApp, ou outros meios de comunicação, inclusive para envio
+                    de
+                    notificações ou push de uso dos nossos serviços;</p>
+                <p> - Marketing, prospecção, pesquisas de mercado, de opinião e promoção dos nossos produtos e serviços;
+                </p>
+                <p> - Consultas sobre suas informações na base de dados do Sistema de Informações de Crédito (SCR),
+                    mediante
+                    a
+                    obtenção do seu consentimento com esse uso;</p>
+                <p> - Prevenção e resolução de problemas técnicos ou de segurança;</p>
+                <p> - Investigações e medidas de prevenção e combate a ilícitos, fraudes, crimes financeiros e garantia
+                    da
+                    segurança dos clientes do Iop;</p>
+                <p> - Exercício regular de direitos do Iop, inclusive apresentando documentos em processos judiciais e
+                    administrativos, se necessário;</p>
+                <p> - Colaboração ou cumprimento de ordem judicial, de autoridade competente ou de órgão fiscalizador;
+                </p>
+                <p> - Cumprimento de obrigação legal ou regulatória.</p>
+
+                <p> Dados pessoais que coletamos de terceiros</p>
+
+                <p> - Melhoria de nossos produtos e serviços;</p>
+                <p> - Marketing, prospecção, pesquisas de mercado e de opinião;</p>
+                <p> - Prevenção e resolução de problemas técnicos ou de segurança;</p>
+                <p> - Investigações e medidas de prevenção e combate a ilícitos, fraudes, crimes financeiros e garantia
+                    da
+                    segurança dos clientes Iop.</p>
+
+                <p> Dados de navegação e do dispositivo</p>
+
+                <p> - Prestação dos serviços, oferecimento dos produtos contratados e aperfeiçoamento do uso e
+                    experiência
+                    com
+                    o aplicativo e sites do Iop;</p>
+                <p> - Operacionalização de novos produtos e serviços;</p>
+                <p> - Recomendação de novos serviços, produtos ou funcionalidades do aplicativo, inclusive serviços de
+                    parceiros que possam te interessar;</p>
+                <p> - Exibição de publicidade, seja no nosso site, redes sociais ou em sites de terceiros;</p>
+                <p> - Geração de estatísticas, estudos, pesquisas e levantamentos pertinentes às atividades e
+                    comportamento
+                    no
+                    uso dos produtos ou serviços;</p>
+                <p> - Prevenção e resolução de problemas técnicos ou de segurança;</p>
+                <p> - Dados de geolocalização para sua segurança; </p>
+                <p> - Investigações e medidas de prevenção e combate a ilícitos, fraudes, crimes financeiros e garantia
+                    da
+                    segurança dos clientes Iop;</p>
+                <p> - Exercício regular de direitos do Iop, inclusive apresentando documentos em processos judiciais e
+                    administrativos, se necessário;</p>
+                <p> - Cumprimento de ordem judicial, de autoridade competente ou de órgão fiscalizador;</p>
+                <p> - Cumprimento de obrigação legal ou regulatória.</p>
+
+                <span>4 - Compartilhamento de dados pessoais</span>
+
+                <p> O Iop poderá compartilhar os seus dados mediante sua solicitação. Sempre que efetuado, o
+                    compartilhamento
+                    de dados será realizado dentro dos limites e propósitos dos nossos negócios e de acordo com o que
+                    autoriza a legislação aplicável.</p>
+
+                <span>5 - Retenção e exclusão dos dados pessoais</span>
+
+                <p> Durante o uso dos nossos produtos e serviços e por todo o período em que o Iop armazenar seus dados
+                    pessoais, eles serão mantidos em ambiente seguro e controlado. Quando aplicável, e mesmo após o
+                    cancelamento da conta do Iop, poderemos manter seus dados armazenados para atendimento a obrigações
+                    que
+                    porventura estejam previstas em lei para prestação de informações a entes públicos e para preservar
+                    nossos direitos em ações judiciais.</p>
+
+                <span>6 - Direitos como titular de dados pessoais</span>
+
+                <p> Com da entrada em vigor da LGPD, você, como titular de dados pessoais, pode exercer seus direitos
+                    frente
+                    aos controladores dos seus dados pessoais, sendo seus direitos a partir de 18 de setembro de 2020
+                    com
+                    base na Lei 13.709:</p>
+
+                <p> - Confirmação da existência de tratamento de dados pessoais;</p>
+                <p> - Acesso aos dados pessoais;</p>
+                <p> - Correção de dados pessoais incompletos, inexatos ou desatualizados;</p>
+                <p> - Anonimização, bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em
+                    desconformidade com a LGPD;</p>
+                <p> - Eliminação dos dados pessoais tratados com o consentimento;</p>
+                <p> - Informação das empresas com as quais o Iop compartilhou ou das quais recebeu seus dados pessoais;
+                </p>
+                <p> - Informação sobre a possibilidade de não fornecer consentimento e sobre as consequências da
+                    negativa;
+                </p>
+                <p> - Revogação do consentimento;</p>
+                <p> - Decisões automatizadas.</p>
+
+                <span>7 - Registro de atividades</span>
+
+                <p> Poderão ser registradas as atividades que você realiza quando utiliza nosso aplicativo, site ou
+                    blogs,
+                    criando, quando possível e aplicável, logs que conterão o endereço IP, acesso e ações realizadas por
+                    você no serviço disponibilizado, data e hora de cada ação realizada e informações sobre o
+                    dispositivo
+                    utilizado, tais como a versão de sistema operacional, navegador e geolocalização. Também podemos
+                    utilizar tecnologias, próprias ou de terceiros, de monitoramento das atividades como Cookies
+                    (arquivos
+                    de internet que armazenam de forma temporária o que você está visitando na rede), Web beacon
+                    (técnica
+                    que permite mapear quem está visitando uma determinada página da web, identificando o seu
+                    comportamento
+                    com diferentes sites ou servidores da web), e analytics tools (ferramenta de coleta de informações
+                    como
+                    a forma que você visita um site). </p>
+
+                <span>8 - Transferência internacional de dados pessoais</span>
+
+                <p> Alguns de seus dados pessoais, ou todos eles, poderão ser transferidos para o exterior, por exemplo
+                    quando são armazenados pelo Iop em servidores de computação em nuvem localizados fora do Brasil,
+                    observando sempre todos os requerimentos estabelecidos pela legislação vigente e adoção das melhores
+                    práticas de segurança e privacidade para garantir a integridade e confidencialidade dos seus dados
+                    pessoais.</p>
+
+                <span>9 - Medidas de segurança</span>
+
+                <p> O Iop usa diversos tipos de medidas de segurança para garantir a integridade de seus dados pessoais,
+                    como
+                    padrões de segurança de informação praticados pela indústria quando coleta e armazena dados
+                    pessoais. Os
+                    dados pessoais podem, ainda, ser armazenados por meios de tecnologia de cloud computing e outras
+                    tecnologias que surjam futuramente, visando sempre a melhoria e aperfeiçoamento de nossos serviços e
+                    segurança. Citamos como técnicas:</p>
+
+                <p> - Autenticação para acesso às informações;</p>
+                <p> - Dados criptografados;</p>
+                <p> - Uso de parceiros certificados;</p>
+                <p> - Ambiente auditável;</p>
+                <p> - Monitoramento contínuo.</p>
+
+                <span>10 - Consentimento</span>
+
+                <p> Você consente com o tratamento dos dados pessoais nas formas aqui indicadas clicar em "Li, estou
+                    ciente
+                    das condições de tratamento dos meus dados pessoais e forneço meu consentimento, quando aplicável,
+                    conforme descrito nesta Política de Privacidade.", quando acessa nosso aplicativo.</p>
+
+                <span>11 - Alterações a essa Política de Privacidade</span>
+
+                <p> O Iop poderá alterar esta Política de Privacidade a qualquer tempo. Toda vez que alguma condição
+                    relevante desta Política de Privacidade for alterada, essas alterações serão válidas, eficazes e
+                    vinculantes após a nova versão ser divulgada no nosso site ou enviada por e-mail para você. Ao
+                    continuar
+                    a usar nossos produtos e serviços após uma alteração na Política de Privacidade, você estará
+                    concordando
+                    com as novas condições, podendo manifestar discordância através dos nossos meios de comunicação.</p>
+
+                <p> Nas hipóteses em que as alterações a esta Política de Privacidade resultarem em mudanças nas
+                    práticas de
+                    tratamento de dados pessoais que dependam do seu consentimento, solicitaremos o seu consentimento
+                    com os
+                    novos termos da Política de Privacidade em relação ao tratamento de dados e finalidades indicados.
+                </p>
+
+                <span>12 - Contato</span>
+
+                <p> Segundo a Lei nº 13.709/2018, o IOP é considerado o “Controlador” dos seus dados pessoais. Caso
+                    existam
+                    dúvidas após a leitura desta Política de Privacidade ou por qualquer razão precisar se comunicar
+                    conosco
+                    para assuntos envolvendo os seus dados pessoais, você pode entrar em contato através do telefone
+                    (51) 99182-3600 ou pelo e-mail contato@meuiop.com.</p>
+
+                <a href="#cadastro"></a>
+            </div>
         </div>
-    </div>
 
-    <!-- Termos -->
-    <div id="termo" class="pagina">
-        <div class="conteudo-termo">
-            <h1>Termos de uso de aplicativo </h1>
-            <a href="#cadastro"></a>
+        <!-- Termos -->
+        <div id="termo" class="pagina">
+            <div class="conteudo-termo">
+                <h1>Termos de uso de aplicativo </h1>
+                <a href="#cadastro"></a>
 
-            <p>Este documento descreverá as regras aplicáveis à utilização do aplicativo Iop disponibilizado pela
-                Inovetech, inscrita no CNPJ sob nº XXXXX, com sede na Avenida Bento Gonçalves, 9935 – Bairro Agronomia –
-                Porto Alegre/RS, para utilização em dispositivos móveis ou através do browser de navegação na internet.
-                Ao realizar o cadastro para utilização do Aplicativo, o Usuário se submeterá automaticamente às regras e
-                condições destes Termos de Uso.</p>
+                <p>Este documento descreverá as regras aplicáveis à utilização do aplicativo Iop disponibilizado pela
+                    Inovetech Tecnologia, inscrita no CNPJ sob nº 25.794.346/0001-30, com sede na Avenida Bento 
+                    Gonçalves, 9935 – Bairro Agronomia – Porto Alegre/RS, para utilização em dispositivos móveis ou 
+                    através do browser de navegação na internet.
+                    Ao realizar o cadastro para utilização do Aplicativo, o Usuário se submeterá automaticamente às
+                    regras e condições destes Termos de Uso.</p>
 
-            <span>1 - Definições gerais</span>
+                <span>1 - Definições gerais</span>
 
-            <p>1.1. Aplicativo: é um software desenvolvido para ser instalado em dispositivo eletrônico móvel como
-                telefones smartphone, tablet ou notebooks. Sendo possível baixar através do site Iop
-                (https://meuiop.com/app).</p>
+                <p>1.1. Aplicativo: é um software desenvolvido para ser instalado em dispositivo eletrônico móvel como
+                    telefones smartphone, tablet ou notebooks. Sendo possível baixar através do site Iop
+                    (https://meuiop.com/app).</p>
 
-            <p>1.2. Câmera: é um dispositivo obrigatório para o funcionamento do serviço, pois através dele será
-                possível fotografar código denominado “QR Code” utilizado para identificar a máquina ao qual você deseja
-                operar através do aplicativo.</p>
+                <p>1.2. Câmera: é um dispositivo obrigatório para o funcionamento do serviço, pois através dele será
+                    possível fotografar código denominado “QR Code” utilizado para identificar a máquina ao qual você
+                    deseja
+                    operar através do aplicativo.</p>
 
-            <p>1.3. Geolocalização: é um sistema capaz de localizar dispositivos móveis através das coordenadas
-                geográficas que são informadas pelo smartphone ou browser, podendo ser utilizado para alertar sobre
-                fraudes ou sugerir pontos de venda de revendedores que ofertam produtos através da nossa plataforma.</p>
+                <p>1.3. Geolocalização: é um sistema capaz de localizar dispositivos móveis através das coordenadas
+                    geográficas que são informadas pelo smartphone ou browser, podendo ser utilizado para alertar sobre
+                    fraudes ou sugerir pontos de venda de revendedores que ofertam produtos através da nossa plataforma.
+                </p>
 
-            <p>1.4. Tecnologia Push: é um sistema de distribuição de conteúdo da Internet em que a informação sai de um
-                servidor para um cliente, com base em uma série de parâmetros estabelecidos pelo cliente, também chamado
-                de “assinatura”. No caso deste Termo de Uso trata-se de conteúdo a ser encaminhado como alertas,
-                lembretes ou mensagens ao usuário que tiver o aplicativo Iop instalado em seu equipamento.</p>
+                <p>1.4. Tecnologia Push: é um sistema de distribuição de conteúdo da Internet em que a informação sai de
+                    um
+                    servidor para um cliente, com base em uma série de parâmetros estabelecidos pelo cliente, também
+                    chamado
+                    de “assinatura”. No caso deste Termo de Uso trata-se de conteúdo a ser encaminhado como alertas,
+                    lembretes ou mensagens ao usuário que tiver o aplicativo Iop instalado em seu equipamento.</p>
 
-            <p>1.5. Revendedores: são empresas credenciadas pela Iop e que possuem nossa automação para tornar seus
-                equipamentos inteligentes para que usuário possa efetuar a compra sem a necessidade de um atendente ou
-                funcionário desta revenda.</p>
+                <p>1.5. Revendedores: são empresas credenciadas pela Iop e que possuem nossa automação para tornar seus
+                    equipamentos inteligentes para que usuário possa efetuar a compra sem a necessidade de um atendente
+                    ou
+                    funcionário desta revenda.</p>
 
-            <p>1.6. Usuários: todas as pessoas, maiores de 18 anos, logo caracterizadas como maiores de idade conforme
-                art. 5º, da Lei n. 10.406/2002 (Novo Código Cívil), onde terão acesso a:</p>
+                <p>1.6. Usuários: todas as pessoas, maiores de 18 anos, logo caracterizadas como maiores de idade
+                    conforme
+                    art. 5º, da Lei n. 10.406/2002 (Novo Código Cívil), onde terão acesso a:</p>
 
-            <p>1.6.1.1. Liberar o acesso a chopeiras, freezers, visa coolers, geladeiras e demais equipamentos que
-                tiverem o QR Code da Iop visíveis nos mesmos.</p>
+                <p>1.6.1.1. Liberar o acesso a chopeiras, freezers, visa coolers, geladeiras e demais equipamentos que
+                    tiverem o QR Code da Iop visíveis nos mesmos.</p>
 
-            <p>1.6.1.2. Comprar o produto ou serviço disponibilizado neste equipamento, ao qual será cobrado o valor
-                correspondente em seu cartão de crédito que foi cadastrado no aplicativo. </p>
+                <p>1.6.1.2. Comprar o produto ou serviço disponibilizado neste equipamento, ao qual será cobrado o valor
+                    correspondente em seu cartão de crédito que foi cadastrado no aplicativo. </p>
 
-            <p>1.6.1.3. Receber notificações através da Tecnologia Push sobre novidades do produto, promoções Iop e
-                demais alertas de uso.</p>
+                <p>1.6.1.3. Receber notificações através da Tecnologia Push sobre novidades do produto, promoções Iop e
+                    demais alertas de uso.</p>
 
-            <span>2 - Sobre o download do aplicativo Iop e o uso por parte do usuário</span>
+                <span>2 - Sobre o download do aplicativo Iop e o uso por parte do usuário</span>
 
-            <p>2.1. Para que o usuário possa baixar o aplicativo em seu aparelho em seu dispositivo eletrônico e ter
-                acesso a todos os recursos, deverá se certificar se possui acesso a internet e browser atualizados.</p>
+                <p>2.1. Para que o usuário possa baixar o aplicativo em seu aparelho em seu dispositivo eletrônico e ter
+                    acesso a todos os recursos, deverá se certificar se possui acesso a internet e browser atualizados.
+                </p>
 
-            <p>2.2. Para efetuar compras através do aplicativo será necessário criar uma conta, informando dados
-                pessoais e um cartão de crédito para as compras que serão efetuadas. Toda a segurança atribuída a este
-                processo e a forma em que os dados são utilizados estão disponíveis em nossa Política de Privacidade
-                disponível no site Iop (https//meuiop.com).</p>
+                <p>2.2. Para efetuar compras através do aplicativo será necessário criar uma conta, informando dados
+                    pessoais e um cartão de crédito para as compras que serão efetuadas. Toda a segurança atribuída a
+                    este
+                    processo e a forma em que os dados são utilizados estão disponíveis em nossa Política de Privacidade
+                    disponível no site Iop (https//meuiop.com).</p>
 
-            <p>2.3. Para criar uma conta no aplicativo obrigatoriamente você declara que tem maior de 18 anos,
-                caracterizado como maiores de idade conforme art. 5º, da Lei n. 10.406/2002 (Novo Código Cívil).
-                Informações falsas a respeito deste tema é de sua responsabilidade e será passível de processo civil
-                conforme lei vigente no Brasil.</p>
+                <p>2.3. Para criar uma conta no aplicativo obrigatoriamente você declara que tem maior de 18 anos,
+                    caracterizado como maiores de idade conforme art. 5º, da Lei n. 10.406/2002 (Novo Código Cívil).
+                    Informações falsas a respeito deste tema é de sua responsabilidade e será passível de processo civil
+                    conforme lei vigente no Brasil.</p>
 
-            <p>2.4. Para criar uma conta no aplicativo obrigatoriamente você também precisa dar aceite que concorda com
-                este “Termo de uso de aplicativo” e com o conteúdo da nossa “Política de Privacidade”. O aceite é
-                obrigatório para uso do aplicativo, não sendo possível prosseguir sem aceitá-lo.</p>
+                <p>2.4. Para criar uma conta no aplicativo obrigatoriamente você também precisa dar aceite que concorda
+                    com
+                    este “Termo de uso de aplicativo” e com o conteúdo da nossa “Política de Privacidade”. O aceite é
+                    obrigatório para uso do aplicativo, não sendo possível prosseguir sem aceitá-lo.</p>
 
-            <p>2.5. Não é de responsabilidade da Iop, caso de um Usuário se utilizar do cadastro de outro Usuário. É
-                responsabilidade do usuário, manter o cuidado sobre sua senha de acesso.</p>
+                <p>2.5. Não é de responsabilidade da Iop, caso de um Usuário se utilizar do cadastro de outro Usuário. É
+                    responsabilidade do usuário, manter o cuidado sobre sua senha de acesso.</p>
 
-            <p>2.6. A Iop se reserva no direito de incluir, excluir ou alterar os conteúdos e funcionalidades do
-                aplicativo, bem como suspendê-lo temporariamente ou cancelá-lo, a qualquer momento, independentemente de
-                aviso prévio ao Usuário. Da mesma forma, poderá modificar estes Termos de Uso, cuja versão mais recente
-                estará sempre disponível no site Iop (https://meuiop.com).</p>
+                <p>2.6. A Iop se reserva no direito de incluir, excluir ou alterar os conteúdos e funcionalidades do
+                    aplicativo, bem como suspendê-lo temporariamente ou cancelá-lo, a qualquer momento,
+                    independentemente de
+                    aviso prévio ao Usuário. Da mesma forma, poderá modificar estes Termos de Uso, cuja versão mais
+                    recente
+                    estará sempre disponível no site Iop (https://meuiop.com).</p>
 
-            <p>2.7. Toda qualquer ação executada ou conteúdo publicado pelo Usuário durante o uso do aplicativo será de
-                sua exclusiva e integral responsabilidade, devendo isentar e indenizar a Iop de quaisquer reclamações,
-                prejuízos, perdas e danos causados, em decorrência de tais ações ou manifestações.</p>
+                <p>2.7. Toda qualquer ação executada ou conteúdo publicado pelo Usuário durante o uso do aplicativo será
+                    de
+                    sua exclusiva e integral responsabilidade, devendo isentar e indenizar a Iop de quaisquer
+                    reclamações,
+                    prejuízos, perdas e danos causados, em decorrência de tais ações ou manifestações.</p>
 
-            <p>2.8. A Iop se exime de toda e qualquer responsabilidade pelos danos e prejuízos de qualquer natureza que
-                possam decorrer do acesso, interceptação, eliminação, alteração, modificação ou manipulação, por
-                terceiros não autorizados, dos dados do usuário durante a utilização do aplicativo.</p>
+                <p>2.8. A Iop se exime de toda e qualquer responsabilidade pelos danos e prejuízos de qualquer natureza
+                    que
+                    possam decorrer do acesso, interceptação, eliminação, alteração, modificação ou manipulação, por
+                    terceiros não autorizados, dos dados do usuário durante a utilização do aplicativo.</p>
 
-            <span>3 - Sobre a gratuidade do aplicativo</span>
+                <span>3 - Sobre a gratuidade do aplicativo</span>
 
-            <p>3.1. Não haverá nenhum custo para a utilização ou download do aplicativo Iop e tampouco sobre eventuais
-                atualizações;</p>
+                <p>3.1. Não haverá nenhum custo para a utilização ou download do aplicativo Iop e tampouco sobre
+                    eventuais
+                    atualizações;</p>
 
-            <p>3.2. Não haverá nenhum custo na compra de produtos ou serviços utilizados através de nosso aplicativo.
-                Será cobrado no cartão de crédito informado pelo usuário, somente o valor do produto ou serviço
-                adquirido./p>
+                <p>3.2. Não haverá nenhum custo na compra de produtos ou serviços utilizados através de nosso
+                    aplicativo.
+                    Será cobrado no cartão de crédito informado pelo usuário, somente o valor do produto ou serviço
+                    adquirido./p>
 
-                <span>4 - Renúncia a garantias e limitações de responsabilidade</span>
+                    <span>4 - Renúncia a garantias e limitações de responsabilidade</span>
 
-            <p>4.1. A Iop responde pelos seus serviços e pelo gerenciamento do aplicativo em relação aos usuários,
-                porém, a qualidade e quantidade dos produtos e serviços oferecidos por nossos parceiros é de
-                responsabilidade exclusiva destes últimos.</p>
+                <p>4.1. A Iop responde pelos seus serviços e pelo gerenciamento do aplicativo em relação aos usuários,
+                    porém, a qualidade e quantidade dos produtos e serviços oferecidos por nossos parceiros é de
+                    responsabilidade exclusiva destes últimos.</p>
 
-            <p>4.2. O Usuário é responsável pela(s) atualização(ões) do aplicativo Iop. Caso não o faça e tiver problema
-                na sua utilização, a Iop estará isenta de responsabilidade por quaisquer perdas e danos.</p>
+                <p>4.2. O Usuário é responsável pela(s) atualização(ões) do aplicativo Iop. Caso não o faça e tiver
+                    problema
+                    na sua utilização, a Iop estará isenta de responsabilidade por quaisquer perdas e danos.</p>
 
-            <span>5 - Propriedade intelectual</span>
+                <span>5 - Propriedade intelectual</span>
 
-            <p>5.1. O Usuário concorda que os serviços prestados pelo Iop, e seus respectivos softwares, incluindo ainda
-                a integração com outros serviços ou aplicativos, scripts e software utilizados para implementá-lo contêm
-                informações exclusivas de propriedade da Iop e/ou seus licenciantes e são protegidos pelas leis de
-                propriedade intelectual e outras leis aplicáveis, incluindo, sem limitação, direitos autorais.</p>
+                <p>5.1. O Usuário concorda que os serviços prestados pelo Iop, e seus respectivos softwares, incluindo
+                    ainda
+                    a integração com outros serviços ou aplicativos, scripts e software utilizados para implementá-lo
+                    contêm
+                    informações exclusivas de propriedade da Iop e/ou seus licenciantes e são protegidos pelas leis de
+                    propriedade intelectual e outras leis aplicáveis, incluindo, sem limitação, direitos autorais.</p>
 
-            <p>5.2. O Usuário concorda que não utilizará tais informações ou materiais exclusivos de nenhuma forma,
-                exceto para uso dos Serviços em conformidade com este Termo de Uso. Nenhuma parte dos serviços poderá
-                ser reproduzida de qualquer forma ou por qualquer meio, exceto conforme expressamente permitido por
-                estes termos.</p>
+                <p>5.2. O Usuário concorda que não utilizará tais informações ou materiais exclusivos de nenhuma forma,
+                    exceto para uso dos Serviços em conformidade com este Termo de Uso. Nenhuma parte dos serviços
+                    poderá
+                    ser reproduzida de qualquer forma ou por qualquer meio, exceto conforme expressamente permitido por
+                    estes termos.</p>
 
-            <p>5.3. Todos os direitos autorais relacionados ao aplicativo Iop e software relacionados são de propriedade
-                da Iop, que reserva todos os seus direitos previstos em lei e equidade. A utilização do software ou
-                qualquer parte dos serviços do aplicativo Iop, exceto para o uso permitido neste termo, é estritamente
-                proibida e viola os direitos de propriedade intelectual de terceiros, podendo sujeitá-lo a penalidades
-                civis e criminais, incluindo possíveis danos patrimoniais por violação de direitos autorais.</p>
+                <p>5.3. Todos os direitos autorais relacionados ao aplicativo Iop e software relacionados são de
+                    propriedade
+                    da Iop, que reserva todos os seus direitos previstos em lei e equidade. A utilização do software ou
+                    qualquer parte dos serviços do aplicativo Iop, exceto para o uso permitido neste termo, é
+                    estritamente
+                    proibida e viola os direitos de propriedade intelectual de terceiros, podendo sujeitá-lo a
+                    penalidades
+                    civis e criminais, incluindo possíveis danos patrimoniais por violação de direitos autorais.</p>
 
-            <p>5.4. A Iop, o logotipo Iop (incluindo respectivas derivações) e marca Iop são registradas no Brasil e/ou
-                em outro país. O Usuário não recebe qualquer direito ou licença com relação a quaisquer das marcas
-                mencionadas e ao uso destas.</p>
+                <p>5.4. A Iop, o logotipo Iop (incluindo respectivas derivações) e marca Iop são registradas no Brasil
+                    e/ou
+                    em outro país. O Usuário não recebe qualquer direito ou licença com relação a quaisquer das marcas
+                    mencionadas e ao uso destas.</p>
 
-            <a href="#cadastro"></a>
+                <a href="#cadastro"></a>
+            </div>
         </div>
-    </div>
 
-    <!-- Página 404 -->
-    <div id="pagina404" class="pagina">
-        <h3>404</h3>
-        <h2 id="pagina404-erro"></h2>
+        <!-- Página 404 -->
+        <div id="pagina404" class="pagina">
+            <h3>404</h3>
+            <h2 id="pagina404-erro"></h2>
+        </div>
     </div>
 
     <!-- Scripts -->
