@@ -160,7 +160,6 @@ body {
     color: #fff;
 }
 
-
 .campo button.oposto {
     background: var(--vermelho-iop);
     color: #fff;
@@ -200,7 +199,6 @@ body {
 
 .conteudo-cadastro, .conteudo-login {
     text-align: center;
-    height: 93vh;
 }
 
 .conteudo-cadastro .container:before {
@@ -932,6 +930,11 @@ body {
 }
 
 @media (max-width:400px) { 
+    .app{
+        height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
     .app:before {
         background-image: none;
     }
