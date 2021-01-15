@@ -203,7 +203,7 @@ body {
 
 .conteudo-cadastro .container:before {
     content: "";
-    position: absolute;
+    position: fixed;
     height: 455px;
     width: 500px;
     top: -20%;
@@ -575,7 +575,7 @@ body {
 
 .painel-comprar:before {
     content: "";
-    position: absolute;
+    position: fixed;
     height: 455px;
     width: 500px;
     top: -4%;
@@ -833,7 +833,7 @@ body {
     flex-direction: column;
 }
 
-.conteudo-boas-vindas .slide1:before {
+/* .conteudo-boas-vindas .slide1:before {
     content: "";
     position: fixed;
     height: 455px;
@@ -843,9 +843,9 @@ body {
     transform: translateY(-57%);
     background-image: linear-gradient(-45deg, var(--amarelo-iop) 0%, var(--amarelo-iop) 100%);
     border-radius: 50%;
-}
+} */
 
-.conteudo-boas-vindas .slide2:before {
+/* .conteudo-boas-vindas .slide2:before {
     content: "";
     position: fixed;
     height: 455px;
@@ -855,8 +855,8 @@ body {
     transform: translateY(-57%);
     background-image: linear-gradient(-45deg, var(--amarelo-iop) 0%, var(--amarelo-iop) 100%);
     border-radius: 50%;
-}
-
+} */
+/* 
 .conteudo-boas-vindas .slide3:before {
     content: "";
     position: fixed;
@@ -867,8 +867,9 @@ body {
     transform: translateY(-57%);
     background-image: linear-gradient(-45deg, var(--amarelo-iop) 0%, var(--amarelo-iop) 100%);
     border-radius: 50%;
-}
+} */
 
+/* 
 .conteudo-boas-vindas .slide4:before {
     content: "";
     position: fixed;
@@ -879,7 +880,7 @@ body {
     transform: translateY(-57%);
     background-image: linear-gradient(-45deg, var(--amarelo-iop) 0%, var(--amarelo-iop) 100%);
     border-radius: 50%;
-}
+} */
 
 .conteudo-boas-vindas .slide1 img, 
 .conteudo-boas-vindas .slide2 img,
@@ -941,7 +942,7 @@ body {
 
     .pagina.ativa {
         background: none;
-        width: 330px;
+        width: 350px;
     }
 
     .progresso .etapa .ponto:before, .progresso .etapa .ponto:after {
