@@ -35,7 +35,6 @@ body {
 }
 
 .app{
-    min-width: 400px;
     height: 100vh;
     display: -webkit-flex;
     display: flex;
@@ -71,7 +70,6 @@ body {
     display: block;
     width: 400px;
     background: white;
-    min-height: 100vh;
 }
 
 
@@ -220,7 +218,7 @@ body {
 .conteudo-cadastro .cabecalho {
     display: flex;
     justify-content: space-between;
-    padding: 10px 15px 10px 15px;
+    padding: 0 15px 10px 15px;
     align-items: center;
 }
 
@@ -372,9 +370,6 @@ body {
 /********************************************************/
 
 /* Cabeçalho */
-.conteudo-login {
-    margin: 0 35px;
-}
 
 .conteudo-login .cabecalho {
     display: block;
@@ -397,11 +392,6 @@ body {
 	display: flex;
     justify-content: space-between;
     margin: 0 10px 0 10px;
-}
-
-.outras-acoes a{
-    color: var(--vermelho-iop);
-    font-size: 14px;
 }
 
 .lembrar{
